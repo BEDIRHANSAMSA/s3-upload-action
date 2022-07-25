@@ -1,62 +1,65 @@
-name: 'Akillisatici S3 Upload Action'
-description: 'This is a GitHub Action that uploads a file to Amazon S3.'
-author: 'Bedirhan SAMSA'
+name: "Akillisatici S3 Upload Action"
+description: "This is a GitHub Action that uploads a file to Amazon S3."
+author: "Bedirhan SAMSA"
 branding:
-  icon: 'upload-cloud'
-  color: 'white'
+  icon: "upload-cloud"
+  color: "white"
 inputs:
   aws-access-key-id:
-    description: ''
+    description: ""
     required: true
   aws-secret-access-key:
-    description: ''
+    description: ""
     required: true
   aws-region:
-    description: ''
+    description: ""
     required: true
   aws-bucket:
-    description: ''
+    description: ""
+    required: true
+  aws-endpoint:
+    description: ""
     required: true
   file-path:
-    description: ''
+    description: ""
     required: true
   destination-dir:
-    description: ''
+    description: ""
     required: false
   bucket-root:
-    description: ''
-    default: ''
+    description: ""
+    default: ""
     required: false
   output-file-url:
-    description: ''
-    default: 'false'
+    description: ""
+    default: "false"
     required: false
   content-type:
-    description: ''
+    description: ""
     required: false
   output-qr-url:
-    description: ''
-    default: 'false'
+    description: ""
+    default: "false"
     required: false
   qr-width:
-    description: ''
-    default: '120'
+    description: ""
+    default: "120"
     required: false
   public:
-    description: ''
-    default: 'false'
+    description: ""
+    default: "false"
     required: false
   expire:
-    description: ''
-    default: '86400'
+    description: ""
+    default: "86400"
     required: false
 outputs:
   result:
-    description: '`success` or `failure` is set.'
+    description: "`success` or `failure` is set."
   file-url:
-    description: ''
+    description: ""
   qr-url:
-    description: ''
+    description: ""
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
+  using: "node12"
+  main: "dist/index.js"
