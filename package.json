@@ -1,9 +1,12 @@
 {
-  "name": "s3-upload-action",
+  "name": "@akillisatici/s3-upload-action",
   "version": "2.0.0",
   "description": "This is a GitHub Action that uploads a file to Amazon S3",
   "main": "src/main.js",
-  "author": "Hiroyuki Kusu <kusu0806@gmail.com>",
+  "author": "Bedirhan SAMSA <me@bedirhan.dev",
+  "contributors": [
+    "Hiroyuki Kusu <kusu0806@gmail.com>"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
