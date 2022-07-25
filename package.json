@@ -23,6 +23,7 @@
     "qrcode": "^1.4.4"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.20.5"
+    "@zeit/ncc": "^0.20.5",
+    "dotenv": "^16.0.1"
   }
 }
