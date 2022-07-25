@@ -21,7 +21,7 @@ if (NODE_ENV != "local") {
     }),
     awsRegion: core.getInput("aws-region", { required: true }),
     awsBucket: core.getInput("aws-bucket", { required: true }),
-    endpoint: core.getInput("endpoint", { required: true }),
+    endpoint: core.getInput("aws-endpoint", { required: true }),
     filePath: core.getInput("file-path", { required: true }),
     destinationDir: core.getInput("destination-dir"),
     bucketRoot: core.getInput("bucket-root"),
